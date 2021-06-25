@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+body {
+  background: rgb(114, 32, 255);
+  background: linear-gradient(
+    162deg,
+    rgba(114, 32, 255, 1) 0%,
+    rgba(30, 79, 224, 0.6895133053221288) 100%
+  );
+}
+
+input {
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+button {
+  margin-top: 5px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  border: 0.02px solid black;
+}

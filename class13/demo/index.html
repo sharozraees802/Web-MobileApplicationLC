@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCHquOqmN3CbXZidi5kU1sWgWOd_kUJiKA",
+          authDomain: "amy-royj.firebaseapp.com",
+          databaseURL: "https://amy-royj-default-rtdb.firebaseio.com",
+          projectId: "amy-royj",
+          storageBucket: "amy-royj.appspot.com",
+          messagingSenderId: "248578376054",
+          appId: "1:248578376054:web:01dde777daa20d6b7e7a57"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    
+<div>
+    <fieldset>
+        <br>
+        
+        <input type="text" placeholder="Name" name="" id="Name">
+        <br>
+        <br>
+        <input type="text" placeholder="RollerNumber" name="" id="Roll">
+        <br>
+        <br>
+        <button onclick="saveData()">SAVE</button>
+    </fieldset>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,794 @@
+/**
+|--------------------------------------------------
+| TASK 1
+|--------------------------------------------------
+*/
+
+Write a program that writes the current date in the following format.
+====> Tue Dec 03 2019
+
+/**
+|--------------------------------------------------
+| TASK 2
+|--------------------------------------------------
+*/
+
+Write a program that writes the current date in the following format.
+====> Tue Dec 03 2019 14:53:48 GMT+0500 (Pakistan Standard Time)
+
+
+/**
+|--------------------------------------------------
+| TASK 3
+|--------------------------------------------------
+*/
+
+What will be the output of the following program?
+
+const date = new Date();
+console.log("HOUR =======>", date.getHours());
+console.log("DAY =======>", date.getDay());
+console.log("MONTH =======>", date.getMonth());
+console.log("YEAR =======>", date.getFullYear())
+
+/**
+|--------------------------------------------------
+| TASK 4
+|--------------------------------------------------
+*/
+
+What will be the output of the following program?
+
+const date = new Date();
+console.log(new Date(date.setFullYear(2006)).toDateString())
+
+
+/**
+|--------------------------------------------------
+| TASK 5
+|--------------------------------------------------
+*/
+
+Write a function that takes a name as a parameter and append Mr. at the start of the name on console
+
+
+/**
+|--------------------------------------------------
+| TASK 6
+|--------------------------------------------------
+*/
+
+Invoke the following function and determine the output. 
+
+function tellTime() {
+    var now = new Date();
+    var theHr = now.getHours();
+    var theMin = now.getMinutes();
+    console.log("Current time: " + theHr + ":" + theMin)
+}
+
+/**
+|--------------------------------------------------
+| TASK 7
+|--------------------------------------------------
+*/
+
+Point out the incorrect form of writing a function in javascript 
+
+1. myfunction() { }
+2. function myfunction() { }
+3. func myfunction() { }
+4. myfunction = () => { }
+
+
+/**
+|--------------------------------------------------
+| TASK 8
+|--------------------------------------------------
+*/
+
+Write a function that takes an array as a parameter.
+The function's duty is to delete the last element from the array and return the array
+
+
+
+/**
+|--------------------------------------------------
+| TASK 9
+|--------------------------------------------------
+*/
+
+Write a function that takes an argument.
+The function's duty is to check the arguments type and print the type
+For example if i pass in a string the function should print string on the console
+if i pass a number the console should print number
+
+
+/**
+|--------------------------------------------------
+| TASK 10
+|--------------------------------------------------
+*/
+Write a function that takes an array of numbers as a parameter and function's job
+is to multiply each element of an array by 2 and print it
+
+/**
+|--------------------------------------------------
+| TASK 11
+|--------------------------------------------------
+*/
+
+Write a function that does not get any arguments but should return a random id number if called against a variable 
+Example:
+ 
+ var id = generateId();
+ the generate function should generate a random id between 1 - 1000 and return it 
+
+
+
+/**
+|--------------------------------------------------
+| TASK 12
+|--------------------------------------------------
+*/
+
+Write a function that takes in a string as an argument an the functions duty is to check the number of characters
+in a string a print it on the console
+
+
+/**
+|--------------------------------------------------
+| TASK 13
+|--------------------------------------------------
+*/
+write an arrow function that takes in a string as an argument and returns the string in uppercase letters.
+
+
+/**
+|--------------------------------------------------
+| TASK 14
+|--------------------------------------------------
+*/
+Write a function to sort an array of numbers in ascending or descending order
+
+
+
+/**
+|--------------------------------------------------
+| TASK 15
+|--------------------------------------------------
+*/
+Write a function and the functions duty is to first check 
+if the argument passed is a string..if it is then you should concatenate behind the sring "Welcome"  and return it
+if the argument passed is a number then it should be multiplied by the power of 2 and return it
+
+
+
+
+/**
+|--------------------------------------------------
+| TASK 16
+|--------------------------------------------------
+*/
+Write a function to round a number to a specified number of digits. when passed as an argument and return it
+Example: 
+roundNumber(4.6); 
+Expected Ouput: 5 ===> The number is rounded off 
+
+
+---------------------------------------------------------------------------------------
+
+/**
+|--------------------------------------------------
+| TASK 1
+|--------------------------------------------------
+*/
+Write a function that takes in an array of country names as the first argument, the second argument
+is the length of characters, the functions duty is to find a country name that is equal to the length provided.
+give the length and array yourself 
+
+example =======> 
+var countries = ["Pakistan", "India", "Paris", "Afghanistan", "Turkey"]
+checkLength(countries, 6) //Should return a country that has 6 letters in its name
+
+/**
+|--------------------------------------------------
+| TASK 2
+|--------------------------------------------------
+*/
+write a function that takes in two arguments; 
+The first argument should be an array  of number if no array is provided default array of numbers can be used by the function itself
+the second argument should be a single digit from within the array 
+
+the function should return the array or print it but it should not contain the number which was passed as a second argument 
+
+
+/**
+|--------------------------------------------------
+| TASK 3
+|--------------------------------------------------
+*/
+ <div id="myDiv">
+    <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+</div>
+
+use the html code given above and print the children of "myDiv" on the console 
+
+
+
+/**
+|--------------------------------------------------
+| TASK 4
+|--------------------------------------------------
+*/
+ <div id="myDiv">
+    <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+</div>
+
+use the html code given above and print the child Nodes of "myDiv" on the console 
+
+
+/**
+|--------------------------------------------------
+| TASK 5
+|--------------------------------------------------
+*/
+ <div id="myDiv">
+    <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+</div>
+
+using the code given above what will be the output of the following javascript code
+ ======+> console.log(document.getElementById("myDiv").childNodes[1].childNodes[0].nodeValue)
+
+
+
+/**
+|--------------------------------------------------
+| TASK 6
+|--------------------------------------------------
+*/
+ <div id="myDiv">
+    <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+</div>
+
+using the code given above what will be the output of the following javascript code
+ ======> console.log(document.getElementById("myDiv").childNodes[1].childNodes[0].nodeValue)
+ 
+ /**
+|--------------------------------------------------
+| TASK 7
+|--------------------------------------------------
+*/
+ <div id="myDiv">
+    <p>Southern Cal is sunny.</p>
+    <p>Northern Cal is rainy.</p>
+    <p>Eastern Cal is desert.</p>
+</div>
+
+using the code given above what will be the output of the following javascript code
+
+         var elem = document.getElementById('myDiv');
+         var secondChild = elem.children[1];
+         console.log(secondChild.childNodes[0].nodeValue)
+
+ /**
+|--------------------------------------------------
+| TASK 8
+|--------------------------------------------------
+*/
+ Using javascript. make the following paragraph's color red 
+ 
+         <p id="myPara">This paragraph should be red</p>
+
+
+ /**
+|--------------------------------------------------
+| TASK 9
+|--------------------------------------------------
+*/
+ Using javascript. check if the paragraph tag written below has the attribute "randomAttr" And print true or false on console
+ 
+        <p id="myPara" randomAttr="random">This paragraph should be red</p>
+        
+        
+ /**
+|--------------------------------------------------
+| TASK 10
+|--------------------------------------------------
+*/
+ Using javascript. create an attribute on the following paragraph tag
+ 
+        <p>This paragraph should be red</p>
+
+
+        
+ /**
+|--------------------------------------------------
+| TASK 11
+|--------------------------------------------------
+*/
+ Using javascript and browser events. when mouse is clicked on this paragraph it should vanish
+ 
+        <p id="myPara" >This paragraph should be red</p>
+        
+       
+ /**
+|--------------------------------------------------
+| TASK 12
+|--------------------------------------------------
+*/
+ which of the following are not junk artifacts on DOM
+ 
+ 1. #text 
+ 2. <p> 
+ 3. <empty spaces> 
+ 
+  /**
+|--------------------------------------------------
+| TASK 13
+|--------------------------------------------------
+*/
+ In the context of DOM which is the parent. 
+ 
+ 1. window
+ 2. Document
+ 3. DOCTYPE html 
+ 4. <br>
+ 
+  
+/**
+|--------------------------------------------------
+| TASK 13
+|--------------------------------------------------
+*/
+considering there is a paragraph or a heading written in our body tag, then the code below will be able to access it?
+
+window.document.children[0].children[1].children[0]
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+/**
+|--------------------------------------------------
+| TASK 1
+|--------------------------------------------------
+*/
+
+
+// var obj = {
+//     name: 'Umair',
+//     profession: 'developer', 
+//     age: 21, 
+//     skills: { 
+//         Coding: ['react', 'javascript', 'nodejs']; 
+//         Design: { 
+//             Platform: ['android', 'ios']
+//         }
+//     }
+// }
+
+// Use the above object and the output should be as following in the console.
+
+// "Hello my name is umair i'm a developer my skills in Coding are: react, javascript, nodejs, and i design apps for android and ios"
+
+// Use bracket notation to extract values from an object;
+
+
+
+/**
+|--------------------------------------------------
+| TASK 2
+|--------------------------------------------------
+*/
+
+// var obj = {
+//     name: 'Umair',
+//     profession: 'developer', 
+//     age: 21, 
+//     skills: { 
+//         Coding: ['react', 'redux', "docker", "GraphQL", "Gatsby" 'nodejs', "Express"]; 
+//         Design: { 
+//             Platform: ['android', 'ios']
+//         }
+//     }
+// }
+
+// Use the above object and the output should be as following in the console.
+
+// Hello my name is umair age: 21, im a developer and my skills include {print all the skills in coding key} and i design apps for android and ios
+
+// Use Dot Notation to extract information from object
+
+
+
+/**
+|--------------------------------------------------
+| TASK 3
+|--------------------------------------------------
+*/
+
+// var arrayOfObjects = [
+//     { name: 'Umair', age: 22, profession: "MERN Stack Developer and DevOps Engineer" },
+//     { name: 'Asad', age: 22, profession: "MERN Stack Developer" },
+//     { name: 'Osama', age: 22, profession: "MERN Stack Developer + SQL expert" }
+// ]
+
+// Use the array of objects given above and perform iterations. On each iteration 
+// print the name, age and the profeesion of the corresponding object
+
+
+/**
+|--------------------------------------------------
+| TASK 4
+|--------------------------------------------------
+*/
+
+// var Books = [
+//     {
+//         author: 'Bill Gates',
+//         title: 'The Road Ahead',
+//         readingStatus: true
+//     },
+//     {
+//         author: 'Steve Jobs',
+//         title: 'Walter Isaacson',
+//         readingStatus: true
+//     },
+//     {
+//         author: 'Suzanne Collins',
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         readingStatus: false
+//     }
+// ];
+
+// Take the above array of objects and print the output as following 
+// "{Book Name} {Author Name} {Reading Status}" on each iteration
+
+
+
+/**
+|--------------------------------------------------
+| TASK 5
+|--------------------------------------------------
+*/
+
+// var keys = ["name", "age", "profession"]
+// var values = ["umair", 22, "Developer"];
+
+// create a dynamic object using keys and values array above
+
+
+/**
+|--------------------------------------------------
+| TASK 6
+|--------------------------------------------------
+*/
+
+// var peopleArray = [
+//     { id: 123, name: "dave", age: 23 },
+//     { id: 456, name: "chris", age: 23 },
+//     { id: 789, name: "bob", age: 23 },
+//     { id: 101, name: "tom", age: 23 },
+//     { id: 102, name: "tim", age: 23 }
+// ]
+
+// write a function whose duty is to perform a search operation on the given array 
+// of objects and return the the object whose id was matched 
+
+// example ======> 
+// searchData("123") // Should return an object if found in the array
+
+
+/**
+|--------------------------------------------------
+| TASK 7
+|--------------------------------------------------
+*/
+
+// var peopleArray = [
+//     { id: 123, name: "dave", age: 23 },
+//     { id: 456, name: "chris", age: 23 },
+//     { id: 789, name: "bob", age: 23 },
+//     { id: 101, name: "tom", age: 23 },
+//     { id: 102, name: "tim", age: 23 }
+// ]
+
+// Print the above array in the form of a table on console
+
+
+/**
+|--------------------------------------------------
+| TASK 8
+|--------------------------------------------------
+*/
+
+// var name = "umair"
+// var profession = 'MERN Stack Developer'
+// var age = 22;
+
+// var obj = { name, age, profession }
+
+
+// Is the code written above correct, if yes then justify your answer
+
+
+/**
+|--------------------------------------------------
+| TASK 9
+|--------------------------------------------------
+*/
+
+// Create an object constructor 
+
+
+/**
+|--------------------------------------------------
+| TASK 10
+|--------------------------------------------------
+*/
+
+// var list = ["Learn React", "Learn Nodejs", "Learn New things"];
+
+// Using the list of items above. create the following DOM structure using javascript 
+
+// <div id="myDiv">
+//     <ul id="myList">
+//         <li>Learn React</li>
+//         <li>Learn Nodejs</li>
+//         <li>Learn New things</li>
+//     </ul>
+// </div>
+
+......................................................................................................................
+
+// ***********************************
+// TASK 1
+// write an arrow function that reverses a set of numbers when passed as an argument
+// Example x = 123456;
+// Expected Output : 654321
+// ***********************************
+
+// ***********************************
+// TASK 2
+// Write an arrow function that takes in an array of country names and returns the name with the equal characters
+// give the length yourself
+
+// ***********************************
+
+// ***********************************
+// TASK 3
+// write an arrow function that takes in two arguments;
+// The first argument should be an array  of number if no array is provided default array of numbers can be used by the function itself
+// the second argument should be a single digit from within the array
+// the function should return the array or print it but it should not contain the number which was passed as a second argument
+// ***********************************
+
+// ***********************************
+// TASK 4 (HINT: USE MAP ARRAY HELPER)
+
+// const athleteData = [
+//     { athlete: 'Lionel Messi', team: 'Barcelona', income: 40000000 },
+//     { athlete: 'Cristiano Ronaldo', team: 'Juventus', income: 30000000 },
+//     { athlete: 'Neymar', team: 'Paris Saint-Germain', income: 36800000 },
+//     { athlete: 'Eden Hazard', team: 'Chelsea', income: 10400000 },
+//     { athlete: 'Mohamed Salah', team: 'Liverpool', income: 4680000 },
+//     { athlete: 'Kylian Mbappé', team: 'Paris Saint-Germain: An American Musical', income: 17500000 },
+//     { athlete: 'Luka Modrić', team: 'Real Madrid', income: 9360000 },
+//     { athlete: 'Harry Kane', team: 'Tottenham Hotspurs', income: 17600000 },
+//     { athlete: 'Kevin De Bruyne', team: 'Manchester City', income: 5980000 },
+//     { athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
+// ];
+
+// Use the array of object given above and print the output as follows
+// {athlete} in {team} earned {income} euros
+
+// store the returned data in the variable given below the code should not exceed 4-5 lines
+// const athleteIncomeStrings = 'Replace this message with your code!';
+
+// ***********************************
+
+// ***********************************
+// TASK 5 (HINT: USE FILTER ARRAY HELPER)
+
+// const athleteData = [
+//     { athlete: 'Lionel Messi', team: 'Barcelona', income: 40000000 },
+//     { athlete: 'Cristiano Ronaldo', team: 'Juventus', income: 30000000 },
+//     { athlete: 'Neymar', team: 'Paris Saint-Germain', income: 36800000 },
+//     { athlete: 'Eden Hazard', team: 'Chelsea', income: 10400000 },
+//     { athlete: 'Mohamed Salah', team: 'Liverpool', income: 4680000 },
+//     { athlete: 'Kylian Mbappé', team: 'Paris Saint-Germain: An American Musical', income: 17500000 },
+//     { athlete: 'Luka Modrić', team: 'Real Madrid', income: 9360000 },
+//     { athlete: 'Harry Kane', team: 'Tottenham Hotspurs', income: 17600000 },
+//     { athlete: 'Kevin De Bruyne', team: 'Manchester City', income: 5980000 },
+//     { athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
+// ];
+
+// Use the array of object given above and print the name, team and income of those players
+// whose income is greater than 7 digits
+// store the returned data in the variable given below the code should not exceed 4-5 lines
+// const results = 'Replace this message with your code!';
+
+// ***********************************
+
+// ***********************************
+// TASK 6 (HINT: Combine array helpers)
+
+// const athleteData = [
+//     { athlete: 'Lionel Messi', team: 'Barcelona', income: 40000000 },
+//     { athlete: 'Cristiano Ronaldo', team: 'Juventus', income: 30000000 },
+//     { athlete: 'Neymar', team: 'Paris Saint-Germain', income: 36800000 },
+//     { athlete: 'Eden Hazard', team: 'Chelsea', income: 10400000 },
+//     { athlete: 'Mohamed Salah', team: 'Liverpool', income: 4680000 },
+//     { athlete: 'Kylian Mbappé', team: 'Paris Saint-Germain: An American Musical', income: 17500000 },
+//     { athlete: 'Luka Modrić', team: 'Real Madrid', income: 9360000 },
+//     { athlete: 'Harry Kane', team: 'Tottenham Hotspurs', income: 17600000 },
+//     { athlete: 'Kevin De Bruyne', team: 'Manchester City', income: 5980000 },
+//     { athlete: 'Paul Pogba', team: 'Manchester United', income: 15080000 }
+// ];
+// Use the array of object given above and first check if a player income is greater than 10,000,000 euros
+// and then print the following
+// {player Name} is a great player
+
+// store the returned data in the variable given below
+// const popularPlayer = 'Replace this message with your code!';
+// ***********************************
+
+// ***********************************
+// TASK 7
+// Create an arrow function that takes 2 arguments and returns another arrow function inside an object as a key
+// the nested arrow function should also return an object with the parameters as keys
+// provided to the first arrow function
+
+// ***********************************
+
+// ***********************************
+// TASK 8
+
+// const myFunc = () => {
+//   const obj = {
+//     name: "umair",
+//     age: 22,
+//     profession: "Developer"
+//   };
+
+//   return obj;
+// };
+
+// console.log(myFunc().age);
+
+// Is the above code functional? if yes then explain how
+
+// ***********************************
+
+// ***********************************
+// TASK 8
+
+// const arrayOfCourses = [
+//   {
+//     id: "CNC123",
+//     courseName: "Cloud Native Computing"
+//   },
+
+//   {
+//     id: "IOT123",
+//     courseName: "Internet of things"
+//   },
+//   {
+//     id: "AI123",
+//     courseName: "Artificial Intelligence"
+//   }
+// ];
+
+// const passedCourses = ["CNC123", "AI123"];
+
+// use the data structure given above and solve the following scenario
+
+// if id's in the passedcourses array match with any id in the arrayofcourses array then show the output
+// at each iteration as follow
+
+// You haved passed {id} {courseName}
+
+// ***********************************
+
+// ***********************************
+// TASK 8
+
+// const myFunc = () => {
+//   const obj = {
+//     name: "umair",
+//     age: 22,
+//     profession: "Developer"
+//   };
+
+//   return obj;
+// };
+
+// console.log(myFunc().age);
+
+// Is the above code functional? if yes then explain how
+
+// ***********************************
+
+// ***********************************
+// TASK 9
+
+// What is the output of the following code below
+
+// const arr = [
+//   { id: 1, name: "umair" },
+//   { id: 2, name: "asad" }
+// ];
+
+// const index = 2;
+// const newObj = { id: 4, name: "shahbaz" };
+
+// arr[index] = { ...newObj };
+
+// console.log(arr);
+// ***********************************
+
+// ***********************************
+// TASK 10
+
+// const data = [
+//   {
+//     name: "Umair",
+//     Amt: 100
+//   },
+//   {
+//     name: "Asad",
+//     Amt: 100
+//   }
+// ];
+
+// use the array above as the main data structure and solve the following scenarios
+
+/* 
+1. Create a functionality that adds a new user to our data array 
+with the default amount as 100 if no amount is explicitly provided
+
+2. create a feature as such it allows us to remove a particular account 
+from our data just by passing in the account name 
+
+3. Create a feature that allows us to search a particular user from our 
+given array just by giving in the name or amount 
+*/
+// ***********************************
+
+// ***********************************
+// TASK 11
+
+// const week = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday"
+// ];
+// let a = new Date();
+// console.log(week[a.getDay()]);
+
+// what is the ourput of the above code
+
+// ***********************************
+
+......................................................................................................................
+
+https://github.com/umairx97/CNC-BATCH3-Q3/blob/master/01-Advance-JS/29Jan/Solutions.js?fbclid=IwAR1rCJM38GujGV2qMn6FC9opKbR1Cbltm1r7u0DH_71nrUHMwtCGvekk1U8
+
+https://github.com/umairx97/CNC-BATCH3-Q3/blob/master/01-Advance-JS/12Feb/Solutions.js?fbclid=IwAR1qZHKib9Ohn3PD9tKe7mJYyHg3F77TSfufyyUL5adb16QNOjo7LKjrsxU
+
+Design Pattern Airbnb
+
+https://github.com/airbnb/javascript/tree/master/react?fbclid=IwAR0E6TjlzD1huBeVIBRZihI8I9bxKQJG6HFhlGk7XWSky5m_xWMelYwaJrY
+
+https://github.com/airbnb/javascript?fbclid=IwAR3caziqFTtiGfRdFr60kpjnm_GBya9dSTFrgX4_mdUXWeNoQjdUmuNuvwE
