@@ -85,15 +85,39 @@ function SaveData(){
     var name = document.getElementById("Name")
     var roll = document.getElementById("Roll")
 
+    // var Student = {
+    //     Name : name.value,
+    //     RollNumber : roll.value
+    // }
+
+//   firebase.database().ref('/')
+//   firebase.database().ref('Student').set(Student)
+    //  firebase.database().ref('Student').child('Student1').set(Student)
+    //  firebase.database().ref('Student/Student1').set(Student)
+
+    // firebase.database().ref('Student').push(Student)
+    // firebase.database().ref('Student').child('Student1/Today').push(Student)
+    // firebase.database().ref('Student').push(Student)
+
+//   var key = Math.random() * 23234454562
+
+// error Code
+// firebase.database().ref('Student/' + key).set(Student)
+
+    // firebase.database().ref('Student/' + key.toFixed()).set(Student)
+
+    var key = firebase.database().ref('Student').push(Student).key
+
+    // console.log(key)
     var Student = {
-        Name:name.value,
-        RollNumber:roll.value
+        Name : name.value,
+        RollNumber : roll.value,
+        Key:key
     }
 
-    // console.log(Student)
-    // console.log(firebase.database())
+firebase.database().ref('Student/' + key).set(Student)
 
-    firebase.database().ref('student').set(Student)
+
 
     alert("datasave")
 
@@ -102,3 +126,69 @@ function SaveData(){
 
 
 }
+
+
+
+function getdatavalue(){
+
+ // once  one time data lykr ata page refresh page
+
+// on realtime pe lykr ata h without refresh page
+
+// firebase.database().ref('Student').once("value",function(data){
+
+//     // console.log(data)
+//     console.log(data.val())
+
+// })
+
+
+firebase.database().ref('Student').on("child_added",function(data){
+
+        
+        console.log(data.val())
+    
+    })
+
+// searching
+
+// firebase.database().ref('Student/-MdmDaqRK2lqmBpTawLQ').once('value', function (data) {
+
+//         console.log(data.val())
+
+
+//     })
+
+
+
+}
+
+getdatavalue()
+
+
+
+function firebasedatadelete(){
+
+    // only one key delete
+    // firebase.database().ref('Student/-MdmDaqRK2lqmBpTawLQ').remove()
+
+    // student object delete
+    
+    // firebase.database().ref('Student').remove()
+}
+
+
+firebasedatadelete()
+
+
+
+function editfirebasedata(){
+
+    firebase.database().ref('Student/-MdmGJ7B1EugP-YIFv9U').set({
+        Key:'-MdmGJ7B1EugP-YIFv9U',
+        Name: 'Sahil Nanwani',
+        RollNumber: 9870
+    })
+
+}
+editfirebasedata()
